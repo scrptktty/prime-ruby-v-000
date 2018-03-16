@@ -3,7 +3,7 @@ def prime?(n)
     return true
   end
 
-  n.each do num|
+  n.each do |num|
     sqrt_num = Math.sqrt(n)
     if n % sqrt_num == 0
       return true
