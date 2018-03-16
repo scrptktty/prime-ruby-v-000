@@ -4,11 +4,9 @@ def prime?(n)
   end
 
   n.each do |num|
-    sqrt_num = Math.sqrt(n).floor
-    if n % sqrt_num == 0
+    sqrt_int = Math.sqrt(n).floor
+
+    (2..sqrt_int).any? {|x|  }
       return true
-    else
-      return false
-    end
   end
 end
