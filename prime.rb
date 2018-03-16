@@ -4,7 +4,7 @@ def prime?(n)
   end
 
   (Math.sqrt(n)).each do |sqrt_num|
-    if (n % sqrt_num == 0)
+    if n % sqrt_num == 0
       return false
   end
 end
