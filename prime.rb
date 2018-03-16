@@ -1,5 +1,5 @@
 def prime?(n)
-  return false if n <= 2 
+  return false if n <= 1 
 
   sqrt_int = Math.sqrt(n).floor
 
