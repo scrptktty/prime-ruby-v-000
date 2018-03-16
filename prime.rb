@@ -1,7 +1,10 @@
 def prime?(n)
-    return true if n < 2 && n > 0
-    max = Math.sqrt(n)
-    if (2..max).none?{|k| 0 == n % k}
+  while n < 2 && n > 0
+    return true
+  end
+
+  (Math.sqrt(n)).each do |sqrt_num|
+    if (n % sqrt_num == 0)
       return false
-    end
+  end
 end
