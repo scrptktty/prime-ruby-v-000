@@ -7,6 +7,8 @@ def prime?(n)
     sqrt_num = Math.sqrt(n)
     if n % sqrt_num == 0
       return true
+    else
+      return false
     end
   end
 end
