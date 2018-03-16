@@ -6,6 +6,7 @@ def prime?(n)
   n.each do num|
     sqrt_num = Math.sqrt(n)
     if n % sqrt_num == 0
+      return true
     end
   end
 end
